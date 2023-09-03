@@ -16,6 +16,7 @@ La tarea consiste en realizar 2 programas los cuales son:
 ## Codigo en C++
 ```c++
 #include <iostream>
+using namespace std;
 
 int main() {
     // Define el límite superior para los lados
@@ -28,7 +29,7 @@ int main() {
             for (int hipotenusa = lado2; hipotenusa <= limite_superior; hipotenusa++) {
                 // Se comprueba si se cumple el teorema
                 if (lado1 * lado1 + lado2 * lado2 == hipotenusa * hipotenusa) {
-                    std::cout << "Triple de Pitágoras encontrado: " << lado1 << ", " << lado2 << ", " << hipotenusa << std::endl;
+                    cout << "Triple de Pitágoras encontrado: " << lado1 << ", " << lado2 << ", " << hipotenusa << endl;
                 }
             }
         }
